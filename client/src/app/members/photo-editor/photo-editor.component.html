@@ -1,7 +1,7 @@
 <div class="row">
     @for (photo of member().photos; track photo.id) {
         <div class="col-2">
-            <img src="{{photo.url}}" alt="photo of user" class="img-thumbnail mb-1">
+            <img src="{{photo.url || './assets/user.png'}}" alt="photo of user" class="img-thumbnail mb-1">
             <div class="text-center">
                 <button 
                 class="btn btn-sm me-1"
